@@ -16,13 +16,13 @@ const counterReducer = (state = { counter: 0 }, action) => {
 const store = redux.createStore(counterReducer);
 
 // console.log(store.getState());
+ export default store
+// counterSubscriber = () => {
+//   const latestState = store.getState();
 
-counterSubscriber = () => {
-  const latestState = store.getState();
+//   console.log(latestState);
+// };
 
-  console.log(latestState);
-};
-
-store.subscribe(counterSubscriber);
-store.dispatch({ type: "decrement" });
-store.dispatch({ type: "increment" });
+// store.subscribe(counterSubscriber);
+// store.dispatch({ type: "decrement" });
+// store.dispatch({ type: "increment" });
