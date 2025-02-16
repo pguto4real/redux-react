@@ -13,7 +13,9 @@ const Counter = () => {
   const increaseHandler = () => {
     dispatch({ type: "increase",amount:5 });
   };
-  const toggleCounterHandler = () => {};
+  const toggleCounterHandler = () => {
+    dispatch({ type: "toggle" });
+  };
 
   return (
     <main className={classes.counter}>
