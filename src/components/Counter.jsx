@@ -1,4 +1,5 @@
-import { decrement, increase, increment, toggle } from "../store";
+
+import { decrement, increase, increment, toggle } from "../store/counterSlice";
 import classes from "./Counter.module.css";
 import { useSelector, useDispatch } from "react-redux";
 
