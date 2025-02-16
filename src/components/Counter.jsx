@@ -1,4 +1,4 @@
-import { decrement, increase, increment } from "../store";
+import { decrement, increase, increment, toggle } from "../store";
 import classes from "./Counter.module.css";
 import { useSelector, useDispatch } from "react-redux";
 
@@ -16,7 +16,7 @@ const Counter = () => {
     dispatch(increase({ amount: 5 }));
   };
   const toggleCounterHandler = () => {
-    dispatch({ type: "toggle" });
+    dispatch(toggle());
   };
 
   return (
